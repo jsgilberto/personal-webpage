@@ -1,4 +1,68 @@
+/*  Color Palette (Shore-Thing; Granola Color Scheme)
+    #5fb8c6
+    #c7f8ff
+    #7AEEFF
+    #026F7F
+    #62BECC
+*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* start from top to bottom */
+header {
+  display: flex;
+  justify-content: space-around;
+
+  background: #5fb8c6;
+}
+
+header ul {
+  /*Flexbox properties*/
+  display: flex;
+
+  list-style-type: none;
+}
+
+header ul li a{
+  display: block;
+  font-size: 20px;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 30px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+header ul li a:hover{
+  color: #c7f8ff;
+}
+
+.logo li a{
+  font-size: 24px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info img {
+  margin: 100px auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+}
+
+.personal-info h1{
+  margin: 0 auto;
+  font-size: 42px;
 }
