@@ -106,11 +106,42 @@ header ul li a:hover{
 }
 
 /*.about-me class section*/
+.about-me {
+  margin-bottom: 100px;
+}
 .about-me h3 {
   margin-bottom: 10px;
 }
 
 .about-me p{
   line-height: 1.5em;
+}
+
+/*.projects class section*/
+.projects {
+  margin-bottom: 100px;
+}
+
+.projects h3 {
+  margin-bottom: 10px;
+}
+
+.projects ul {
+  list-style-type: none;
+}
+
+.projects ul li {
+  margin-bottom: 10px;
+}
+
+.projects ul li a {
+  display: inline-block;
+  width: 150px;
+  padding-right: 10px;
+}
+
+/*footer section*/
+footer {
+  
 }
 
