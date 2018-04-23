@@ -18,16 +18,14 @@ body {
   color: #555;
 }
 
-.container {
-  margin: 0 120px;
-}
+
 /* start from top to bottom */
 /*header section*/
 header {
   display: flex;
   justify-content: space-between;
 
-  background: #5fb8c6;
+  background: #026F7F;
 }
 
 header ul {
@@ -48,23 +46,35 @@ header ul li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  transition: font-size 0.3s;
 }
 
 header ul li a:hover{
-  color: #c7f8ff;
+  font-size: 21px;
+  line-height: 99px;
+}
+
+header ul:first-child a:hover {
+  font-size: 25px;
 }
 
 .logo li a{
   font-size: 24px;
   padding-left: 0;
 }
+
+section {
+  padding-left: 120px;
+  padding-right: 120px;
+}
 /*personal-info class section*/
 .personal-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px;
+  padding-bottom: 100px;
+  background:white;
 }
 
 .personal-info img {
@@ -96,8 +106,12 @@ header ul li a:hover{
 
 .personal-info ul li a {
   text-decoration: none;
-  color: inherit;
+  color: #026F7F;
   font-size: 20px;
+}
+
+.personal-info ul li a:hover {
+  color: #62BECC;
 }
 
 .personal-info ul li i {
@@ -108,9 +122,11 @@ header ul li a:hover{
 /*.about-me class section*/
 .about-me {
   margin-bottom: 100px;
+  
+
 }
 .about-me h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .about-me p{
@@ -123,11 +139,12 @@ header ul li a:hover{
 }
 
 .projects h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .projects ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .projects ul li {
@@ -138,10 +155,44 @@ header ul li a:hover{
   display: inline-block;
   width: 150px;
   padding-right: 10px;
+  text-decoration: none;
+  color: #026f7f;
+  font-weight: bold;
+}
+
+.projects ul li a:hover {
+  color: #62BECC;
 }
 
 /*footer section*/
 footer {
-  
+  display: flex;
+  justify-content: space-between;
+  background: #026F7F;
 }
 
+footer ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+footer ul li a{
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  padding-left: 30px;
+  color: white;
+}
+
+footer ul li i {
+  font-size: 30px;
+}
+
+footer ul:first-child li a {
+  padding-left: 0;
+}
