@@ -12,10 +12,13 @@
 }
 
 body {
+  margin: 30px;
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   color: #555;
+  box-shadow: 0px 2px 15px 0px rgba(136,136,136,1);
+  
 }
 
 
@@ -26,6 +29,8 @@ header {
   justify-content: space-between;
 
   background: #026F7F;
+  background: white;
+  border-bottom: 1px solid #999;
 }
 
 header ul {
@@ -44,7 +49,7 @@ header ul li a {
   line-height: 100px;
   padding-left: 30px;
   text-decoration: none;
-  color: white;
+  color: #026F7F;
   text-transform: uppercase;
   transition: font-size 0.3s;
 }
@@ -73,14 +78,21 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 100px;
-  padding-bottom: 100px;
-  background:white;
+  padding-bottom: 200px;
+  background:rgba(2, 110, 127);
+  background-image: linear-gradient(
+      to bottom,
+      rgb(2, 110, 127),
+      rgb(95, 184, 198));
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
 
 .personal-info img {
   margin-bottom: 40px;
   border-radius: 50%;
   width: 200px;
+  border: 1px solid white;
+  
 }
 
 .personal-info h1{
@@ -88,10 +100,12 @@ section {
   text-transform: uppercase;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px #555 solid;
+  color: white;
+  border-bottom: 1px white solid;
 }
 
 .personal-info h2 {
+  color: white;
   margin-bottom: 80px;
 }
 
@@ -106,7 +120,7 @@ section {
 
 .personal-info ul li a {
   text-decoration: none;
-  color: #026F7F;
+  color: white;
   font-size: 20px;
 }
 
@@ -121,15 +135,26 @@ section {
 
 /*.about-me class section*/
 .about-me {
+  margin-top: 100px;
   margin-bottom: 100px;
   
 
 }
 .about-me h3 {
+  text-transform: uppercase;
+  background: linear-gradient(
+    to top,
+    rgb(2, 110, 127),
+    rgb(95, 184, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
 
 .about-me p{
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 20px;
   line-height: 1.5em;
 }
 
@@ -139,6 +164,13 @@ section {
 }
 
 .projects h3 {
+  text-transform: uppercase;
+  background: linear-gradient(
+    to top,
+    rgb(2, 110, 127),
+    rgb(95, 184, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
 
@@ -166,9 +198,16 @@ section {
 
 /*footer section*/
 footer {
+  padding-top: 100px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   background: #026F7F;
+  background-image: linear-gradient(
+      to top,
+      rgb(2, 110, 127),
+      rgb(95, 184, 198));
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 }
 
 footer ul {
@@ -195,4 +234,8 @@ footer ul li i {
 
 footer ul:first-child li a {
   padding-left: 0;
+}
+
+footer ul:first-child li i {
+  font-size: 16px;
 }
